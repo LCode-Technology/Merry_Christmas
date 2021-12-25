@@ -1,0 +1,270 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: absolute;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #F0EFF1;
+    font-family: 'Neuton', serif;
+    font-family: 'Norican', cursive;
+}
+
+nav{
+    text-align: center;
+        font-family: Neuthon;
+        padding: 8px
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color:#a50505eb;
+    text-decoration: underline;
+}
+
+.principal .titulo-principal {
+    position: relative;
+    font-size: 6em;
+    color: #A91526;
+    width: 100%;
+    text-align: center;
+    -webkit-box-reflect: below -35px linear-gradient(transparent, #A91526);
+}cv 
+.text .titulo-text {
+    padding: 20px;
+    position: relative;
+    font-size: 4em;
+    color: white;
+    text-align: center;
+
+}
+h2{
+    position: relative;
+    font-size: 4em;
+    color: #A91526
+;
+    text-align: center;
+}
+
+h2 span{
+    animation: animate1 5s linear infinite;
+} 
+
+h2 span:nth-child(even){
+    animation-delay: 0.4s;
+}
+
+@keyframes animate1 {
+    0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+    {
+        color: #0e3742;
+        text-shadow: none;
+    }
+
+    18.1%,20.1%,30%,50%,60.1%,65%,80.1%,90%,92.1%,100%
+    {
+        color: #FFF;
+        text-shadow: 0 0 10px #A91526,
+        0 0 20px #A91526,
+        0 0 40px #A91526,
+        0 0 80px #A91526,
+        0 0 160px #A91526,
+        0 0 400px #A91526;
+    }
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 35vh;
+background-color: #F0EFF1;
+
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url(./img/wave2.png);
+    background-size: 1000px 100px;
+    animation: animate 10s ease-in infinite;
+    animation-delay: calc(var(--i)* 0.25s);
+
+}
+
+.wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+}
+
+.wave#wave2{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+.wave#wave3{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave#wave4{
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+@keyframes animate{
+    0%,100%{
+        transform: translateY(0px);
+
+    }
+
+    50%{
+        transform: translateY(10px);
+
+    }
+}
+
+.text{
+    background: #ad1919;
+    text-align: center;
+}
+
+.text h2{
+    text-align: center;
+    font-size: 3em;
+    color: #000000;
+}
+
+.text p{
+    font-size: 1.2em;
+    color: #FFF;
+    font-family: Neuthon;
+}
+
+
+
+.wave2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: -10px;
+    width: 100%;
+    height: 100px;
+    background: url(./img/wavecontra.png);
+    background-size: 1000px 100px;
+    animation: animate2 4s ease-in-out infinite;
+    animation-delay: calc(var(--i)* 0.25s);
+}
+
+.wave2#wave5{
+    z-index: 1000;
+    opacity: 1;
+    background-position-x: 400px;
+}
+
+.wave2#wave6{
+    z-index: 999;
+    opacity: 0.5;
+    background-position-x: 300px;
+}
+
+.wave2#wave7{
+    z-index: 998;
+    opacity: 0.2;
+    background-position-x: 200px;
+}
+
+.wave2#wave8{
+    z-index: 999;
+    opacity: 0.7;
+    background-position-x: 100px;
+}
+
+@keyframes animate2{
+    0%,100%{
+        transform: translateY(0px);
+
+    }
+
+    50%{
+        transform: translateY(10px);
+
+    }
+}
+
+.star {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+@media screen and (max-width: 1024px){
+ .principal .titulo-principal {
+    font-size: 3.3em;
+    top: 100px;
+    -webkit-box-reflect: below -9px linear-gradient(transparent, #A91526);
+  }
+}
+
+@media screen and (max-width: : 320px, max-height: 568px) {
+.principal .titulo-principal {
+    font-size: 3em;
+    top: 100px;
+    -webkit-box-reflect: below -9px linear-gradient(transparent, #A91526);
+  }
+}
+
+@media screen and (max-height: 653px) {
+.principal .titulo-principal {
+    font-size: 2.6em;
+    top: 100px;
+    -webkit-box-reflect: below -9px linear-gradient(transparent, #A91526);
+  }
+}
+
+@media screen and (min-width: 768px) {
+.principal .titulo-principal {
+    font-size: 5em;
+    top: 150px;
+    -webkit-box-reflect: below -9px linear-gradient(transparent, #A91526);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+.principal .titulo-principal {
+    font-size: 9em;
+    text-align: center;
+    -webkit-box-reflect: below -9px linear-gradient(transparent, #A91526);
+  }
+}
+
+@media screen and (max-height: 600px) {
+.principal .titulo-principal {
+    font-size: 5em;
+    top: 50px;
+    -webkit-box-reflect: below -9px linear-gradient(transparent, #A91526);
+  }
+}
